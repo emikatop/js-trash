@@ -36,7 +36,7 @@ switch (n % 2) {
 // if stops at the first true condition
 // switch matches all cases until a break is found
 
-// rewrite
+// original
 switch (browser) {
     case "Edge": 
         console.log("You've got the edge!");
@@ -50,7 +50,7 @@ switch (browser) {
     default:
         console.log("If this page looks shit, use a normal browser");
 }
-
+// copy rewritten
 let browser = prompt("Enter your browser:");
 
 if (browser === "Edge") {
@@ -64,3 +64,29 @@ if (browser === "Edge") {
     console.log("If this page looks shit, use a normal browser");
 }
 
+// original
+let a = +prompt("a?", "");
+
+if (a == 0) {
+    console.log(0);
+} 
+if (a == 1) {
+    console.log(1);
+}
+if (a == 2 || a == 3) {
+    console.log("2 or 3");
+}
+
+// rewritten
+switch (a) {
+    case 0:
+        console.log(0);
+        break;
+    case 1:
+        console.log(1);
+        break;
+    case 2:
+    case 3:
+        console.log("2 or 3");
+        break;
+}
