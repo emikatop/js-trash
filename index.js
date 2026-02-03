@@ -35,3 +35,32 @@ switch (n % 2) {
 
 // if stops at the first true condition
 // switch matches all cases until a break is found
+
+// rewrite
+switch (browser) {
+    case "Edge": 
+        console.log("You've got the edge!");
+        break;
+    case "Chrome":
+    case "Firefox":
+    case "Safari":
+    case "Opera":
+        console.log("Okay we support these browsers too");
+        break;
+    default:
+        console.log("If this page looks shit, use a normal browser");
+}
+
+let browser = prompt("Enter your browser:");
+
+if (browser === "Edge") {
+    console.log ("You've got the edge!");
+} else if (browser === "Chrome"
+    || browser === "Firefox"
+    || browser === "Safari"
+    || browser === "Opera") {
+    console.log("Okay we support these browsers too");
+} else {
+    console.log("If this page looks shit, use a normal browser");
+}
+
