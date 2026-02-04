@@ -55,3 +55,35 @@ checkPermission();
     - Function prefixes- exist!!!
     - Break huge functions into smaller ones
 */
+
+//hausaufgabe
+
+function checkAge(age) {
+    if (age >= 18) {
+        return true;
+    } else {
+        return confirm('Do you have permission from your parents?');
+    }
+}
+
+checkAge(age){
+    age >= 18 || confirm('Do you have permission from your parents?');
+}
+
+checkAge(age){
+    age >= 18 ?? confirm('Do you have permission from your parents?');
+}
+
+//hausaufgabe 2
+
+function min(a, b) {
+    if (a < b) {
+        return a;
+    } else {
+        return b;
+    }
+}
+
+function min(a, b) {
+    return a < b ? a : b; // return (if a < b then a else b)
+}
